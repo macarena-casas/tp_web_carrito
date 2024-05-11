@@ -1,0 +1,6 @@
+C:\Users\USURIO\Desktop\tpgrupal_webCarritoCompras\tp_web_carritoCompra\Dominio\bin\Debug\dominio.dll
+C:\Users\USURIO\Desktop\tpgrupal_webCarritoCompras\tp_web_carritoCompra\Dominio\bin\Debug\dominio.pdb
+C:\Users\USURIO\Desktop\tpgrupal_webCarritoCompras\tp_web_carritoCompra\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\USURIO\Desktop\tpgrupal_webCarritoCompras\tp_web_carritoCompra\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\USURIO\Desktop\tpgrupal_webCarritoCompras\tp_web_carritoCompra\Dominio\obj\Debug\dominio.dll
+C:\Users\USURIO\Desktop\tpgrupal_webCarritoCompras\tp_web_carritoCompra\Dominio\obj\Debug\dominio.pdb

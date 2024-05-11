@@ -1,0 +1,9 @@
+C:\Users\USURIO\Desktop\tpgrupal_webCarritoCompras\tp_web_carritoCompra\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\USURIO\Desktop\tpgrupal_webCarritoCompras\tp_web_carritoCompra\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\USURIO\Desktop\tpgrupal_webCarritoCompras\tp_web_carritoCompra\Negocio\bin\Debug\Negocio.dll
+C:\Users\USURIO\Desktop\tpgrupal_webCarritoCompras\tp_web_carritoCompra\Negocio\bin\Debug\Negocio.pdb
+C:\Users\USURIO\Desktop\tpgrupal_webCarritoCompras\tp_web_carritoCompra\Negocio\bin\Debug\dominio.dll
+C:\Users\USURIO\Desktop\tpgrupal_webCarritoCompras\tp_web_carritoCompra\Negocio\bin\Debug\dominio.pdb
+C:\Users\USURIO\Desktop\tpgrupal_webCarritoCompras\tp_web_carritoCompra\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\USURIO\Desktop\tpgrupal_webCarritoCompras\tp_web_carritoCompra\Negocio\obj\Debug\Negocio.dll
+C:\Users\USURIO\Desktop\tpgrupal_webCarritoCompras\tp_web_carritoCompra\Negocio\obj\Debug\Negocio.pdb
