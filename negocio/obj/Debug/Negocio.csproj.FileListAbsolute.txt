@@ -7,3 +7,12 @@ C:\Users\USURIO\Desktop\tpgrupal_webCarritoCompras\tp_web_carritoCompra\Negocio\
 C:\Users\USURIO\Desktop\tpgrupal_webCarritoCompras\tp_web_carritoCompra\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\Users\USURIO\Desktop\tpgrupal_webCarritoCompras\tp_web_carritoCompra\Negocio\obj\Debug\Negocio.dll
 C:\Users\USURIO\Desktop\tpgrupal_webCarritoCompras\tp_web_carritoCompra\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Usuario\Desktop\Carrito\tp_web_carrito\Negocio\bin\Debug\Negocio.dll
+C:\Users\Usuario\Desktop\Carrito\tp_web_carrito\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Usuario\Desktop\Carrito\tp_web_carrito\Negocio\bin\Debug\dominio.dll
+C:\Users\Usuario\Desktop\Carrito\tp_web_carrito\Negocio\bin\Debug\dominio.pdb
+C:\Users\Usuario\Desktop\Carrito\tp_web_carrito\Negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Carrito\tp_web_carrito\Negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Carrito\tp_web_carrito\Negocio\obj\Debug\negocio.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Carrito\tp_web_carrito\Negocio\obj\Debug\Negocio.dll
+C:\Users\Usuario\Desktop\Carrito\tp_web_carrito\Negocio\obj\Debug\Negocio.pdb

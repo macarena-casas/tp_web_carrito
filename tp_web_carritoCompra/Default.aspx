@@ -21,7 +21,7 @@
                     <div class="card-body text-center" style="margin-bottom: 20px;">
                         <h5 class="card-title" style="font-size: 30px; color: black;">$<%: articulo.precio_a  %></h5>
                         <p class="card-text" style="font-size: 30px; color: black;"><strong><%:articulo.marca_a.Nombre%></strong></p>
-                        <p class="card-text" style="font-size: 30px; color: black;"><strong><%:articulo.categoria_a.nombre_categoria%></strong></p>
+                    <p class="card-text" style="font-size: 30px; color: black;"><strong><%:articulo.categoria_a.nombre_categoria%></strong></p>
                     </div>
                 </center>
             </div>
