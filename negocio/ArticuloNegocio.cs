@@ -28,6 +28,7 @@ namespace negocio
                     Articulos aux = new Articulos();
                     aux.nombre_a =(string)datos.lector["Nombre"];
                     aux.precio_a=(decimal)datos.lector["Precio"];
+                    aux.precio_a = Math.Round(aux.precio_a, 2);
                     aux.codigo_a = (string)datos.lector["Codigo"];
                     aux.descripcion_a = (string)datos.lector["Descripcion"];
                     aux.Id_a = (int)datos.lector["Id"];
@@ -107,6 +108,7 @@ namespace negocio
                     Articulos aux = new Articulos();
                     aux.nombre_a = (string)datos.lector["Nombre"];
                     aux.precio_a = (decimal)datos.lector["Precio"];
+                    aux.precio_a = Math.Round(aux.precio_a, 2);
                     aux.codigo_a = (string)datos.lector["Codigo"];
                     aux.descripcion_a = (string)datos.lector["Detalle"];
                     aux.Id_a = (int)datos.lector["Id"];
@@ -152,6 +154,7 @@ namespace negocio
                     Articulos aux = new Articulos();
                     aux.nombre_a = (string)datos.lector["Nombre"];
                     aux.precio_a = (decimal)datos.lector["Precio"];
+                    aux.precio_a = Math.Round(aux.precio_a, 2);
                     aux.codigo_a = (string)datos.lector["Codigo"];
                     aux.descripcion_a = (string)datos.lector["Detalle"];
                     aux.Id_a = (int)datos.lector["Id"];
@@ -196,6 +199,7 @@ namespace negocio
                     Articulos aux = new Articulos();
                     aux.nombre_a = (string)datos.lector["Nombre"];
                     aux.precio_a = (decimal)datos.lector["Precio"];
+                    aux.precio_a = Math.Round(aux.precio_a, 2);
                     aux.codigo_a = (string)datos.lector["Codigo"];
                     aux.descripcion_a = (string)datos.lector["Detalle"];
                     aux.Id_a = (int)datos.lector["Id"];
@@ -241,6 +245,7 @@ namespace negocio
                     Articulos aux = new Articulos();
                     aux.nombre_a = (string)datos.lector["Nombre"];
                     aux.precio_a = (decimal)datos.lector["Precio"];
+                    aux.precio_a = Math.Round(aux.precio_a, 2);
                     aux.codigo_a = (string)datos.lector["Codigo"];
                     aux.descripcion_a = (string)datos.lector["Descripcion"];
                     aux.Id_a = (int)datos.lector["Id"];
@@ -285,6 +290,7 @@ namespace negocio
                     Articulos aux = new Articulos();
                     aux.nombre_a = (string)datos.lector["Nombre"];
                     aux.precio_a = (decimal)datos.lector["Precio"];
+                    aux.precio_a = Math.Round(aux.precio_a, 2);
                     aux.codigo_a = (string)datos.lector["Codigo"];
                     aux.descripcion_a = (string)datos.lector["Descripcion"];
                     aux.Id_a = (int)datos.lector["Id"];

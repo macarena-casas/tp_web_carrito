@@ -17,5 +17,20 @@ namespace tp_web_carritoCompra
         {
 
         }
+
+        protected void btnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Btnhome_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -17,11 +17,11 @@
                 <img src="https://img.freepik.com/foto-gratis/colores-arremolinados-interactuan-danza-fluida-sobre-lienzo-que-muestra-tonos-vibrantes-patrones-dinamicos-que-capturan-caos-belleza-arte-abstracto_157027-2892.jpg" class="card-img-top" style="object-fit: scale-down; height: 30vh; width: 100%;" alt="...">
 
                 <center>
-                    <div class="card-header text-center" style="font-size: 40px; color: darkgreen;"><%: articulo.nombre_a  %></div>
+                    <div class="card-header text-center" style="font-size: 40px; color: darkgreen;"><strong><%: articulo.nombre_a  %></strong></div>
                     <div class="card-body text-center" style="margin-bottom: 20px;">
                         <h5 class="card-title" style="font-size: 30px; color: black;">$<%: articulo.precio_a  %></h5>
-                        <p class="card-text" style="font-size: 30px; color: black;"><strong><%:articulo.marca_a.Nombre%></strong></p>
-                    <p class="card-text" style="font-size: 30px; color: black;"><strong><%:articulo.categoria_a.nombre_categoria%></strong></p>
+                        <p class="card-text" style="font-size: 30px; color: black;"><%:articulo.marca_a.Nombre%></p>
+                    <p class="card-text" style="font-size: 30px; color: black;"><%:articulo.categoria_a.nombre_categoria%></p>
                     </div>
                 </center>
             </div>
