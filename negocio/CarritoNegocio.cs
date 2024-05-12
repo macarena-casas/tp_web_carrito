@@ -32,10 +32,10 @@ namespace Negocio
 
             for (int x = 0; x < car.listaarticulo.Count(); x++)
             {
-                if (car.listaarticulo[x].Articulo.Id_a == articulo.Id_a)
+                if (car.listaarticulo[x].articulo.Id_a == articulo.Id_a)
                 {
                     car.listaarticulo[x].cantidad += cantidad;
-                    car.listaarticulo[x].Subtotal = car.listaarticulo[x].Articulo.precio_a * car.listaarticulo[x].cantidad;
+                    car.listaarticulo[x].Subtotal = car.listaarticulo[x].articulo.precio_a * car.listaarticulo[x].cantidad;
                     existe = true;
 
                 }
@@ -43,13 +43,13 @@ namespace Negocio
             if (existe == false)
             {
                 ElementoAuxiliar aux = new ElementoAuxiliar();
-                aux.Articulo = articulo;
+                aux.articulo = articulo;
                 aux.cantidad += cantidad;
                 aux.Subtotal = articulo.precio_a * aux.cantidad;
                 car.listaarticulo.Add(aux);
 
             }
-            car.TotalPrecio = car.listaarticulo.Sum(aux => aux.cantidad * aux.Articulo.precio_a);
+            car.TotalPrecio = car.listaarticulo.Sum(aux => aux.cantidad * aux.articulo.precio_a);
             car.TotalProductos = car.listaarticulo.Sum(aux => aux.cantidad);
             return car;
         }

@@ -12,6 +12,65 @@ namespace negocio
     public class ArticulosNegocio
 
     {
+        public List<Articulos> uploadArticlesList(string query)
+        {
+            List<Articulos> art = new List<Articulos>();
+            try
+            {
+                Acceso_Datos anegocio = new Acceso_Datos();
+                imagen_negocio inegocio = new imagen_negocio();
+
+
+                anegocio.setearconsulta(query);
+                anegocio.ejecutarlectura();
+                while (anegocio.lector.Read())
+                {
+                    Articulos artic = new Articulos();
+                    Imagen aux = new Imagen();
+                    artic.Imagenes = new List<Imagen>();
+
+                    artic.Id_a = (int)anegocio.lector["Id"];
+                    artic.nombre_a = (string)anegocio.lector["Nombre"];
+                    artic.descripcion_a = (string)anegocio.lector["Descripcion"];
+                    artic.codigo_a = (string)anegocio.lector["Codigo"];
+                    artic.marca_a.Nombre = (string)anegocio.lector["Marca"];
+                    artic.marca_a.Codigo = (int)anegocio.lector["IdMarca"];
+
+                    if (anegocio.lector.IsDBNull(anegocio.lector.GetOrdinal("Categoria")))
+                    {
+                        artic.categoria_a.nombre_categoria = " ";
+                    }
+                    else
+                    {
+                        artic.categoria_a.nombre_categoria = (string)anegocio.lector["Categoria"];
+                        artic.categoria_a.codigo_categoria = (int)anegocio.lector["IdCategoria"];
+                    }
+
+                    artic.precio_a = (decimal)anegocio.lector["Precio"];
+                    artic.precio_a = Math.Round(artic.precio_a, 2);
+                    artic.Imagenes = inegocio.ListarItems(artic.Id_a);
+                    if (artic.Imagenes.Count == 0)
+                    {
+                        aux.Nombre_imagen = "EmptyImage";
+                        artic.Imagenes.Add(aux);
+                    }
+
+
+
+
+                    art.Add(artic);
+                }
+
+                return art;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+
+        }
 
         public List <Articulos> listar()
         {

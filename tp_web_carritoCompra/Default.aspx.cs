@@ -13,8 +13,8 @@ namespace tp_web_carritoCompra
 {
     public partial class Default : System.Web.UI.Page
     {
-        public List<Articulos> itemList { get; set; }
-        //public ShoppingCart currentCart { get; set; }
+        public List<Articulos> listaArticulo { get; set; }
+        public Carrito carritoactual { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -22,17 +22,17 @@ namespace tp_web_carritoCompra
 
 
 
-            if (Session["ItemList"] == null)
+            if (Session["listaarticulo"] == null)
             {
                 ArticulosNegocio iManager = new ArticulosNegocio();
-                itemList = iManager.listar();
-               // itemList = urlValidation(itemList);
-                Session["ItemList"] = itemList;
+                listaArticulo = iManager.listar();
+               // listaArticulo = urlValidation(listaArticulo);
+                Session["listaarticulo"] = listaArticulo;
             }
             else
             {
 
-                itemList = (List<Articulos>)Session["ItemList"];
+                listaArticulo= (List<Articulos>)Session["listaarticulo"];
             }
 
 

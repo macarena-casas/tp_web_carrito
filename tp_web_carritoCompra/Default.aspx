@@ -3,11 +3,19 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>holaa   </h1>
+
+
+    <% if ((List<dominio.Articulos>)Session["articulosfiltrados"] != null)
+        {
+            listaArticulo = (List<dominio.Articulos>)Session["articulosfiltrados"];
+            Session.Remove("articulosfiltrados");
+        }
+
+    %>
 
     <div class="row" style="margin-top: 100px; margin-left: 25px; margin-right: 25px; margin-bottom: 40px;">
 
-        <% foreach (dominio.Articulos articulo in itemList)
+        <% foreach (dominio.Articulos articulo in listaArticulo)
 
             { %>
         <div class="col-12 col-md-6 col-lg-4 mb-2">
@@ -21,15 +29,15 @@
                     <div class="card-body text-center" style="margin-bottom: 20px;">
                         <h5 class="card-title" style="font-size: 30px; color: black;">$<%: articulo.precio_a  %></h5>
                         <p class="card-text" style="font-size: 30px; color: black;"><%:articulo.marca_a.Nombre%></p>
-                    <p class="card-text" style="font-size: 30px; color: black;"><%:articulo.categoria_a.nombre_categoria%></p>
+                        <p class="card-text" style="font-size: 30px; color: black;"><%:articulo.categoria_a.nombre_categoria%></p>
                     </div>
                 </center>
             </div>
         </div>
-    
-         <%
 
-             } %>
+        <%
 
+            } %>
     </div>
+
 </asp:Content>

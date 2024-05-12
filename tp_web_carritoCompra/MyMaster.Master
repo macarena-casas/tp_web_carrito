@@ -17,9 +17,10 @@
     </div>
     <form id="form1" runat="server">
         <div>
+
             <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="success">
                 <a href="Default.aspx" class="nav-link">
-                <asp:Button runat="server" Text="Home" ID="Btnhome" OnClick="Btnhome_Click" class="btn btn-outline-light" UseSubmitBehavior="false"></asp:Button>
+                <asp:Button runat="server" Text="Home" ID="Btnhome" class="btn btn-outline-light" UseSubmitBehavior="false"></asp:Button>
   </a>
             </nav>
 
@@ -28,7 +29,7 @@
                 <div class="mx-auto d-flex">
 
                     <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" Style="visibility: hidden;" />
-                    <asp:TextBox runat="server" ID="tbFilter" class="form-control me-2" placeholder="Search by name, brand and category..." aria-label="search" Style="width: 700px;"
+                    <asp:TextBox runat="server" ID="tbBuscar" class="form-control me-2" placeholder="Search by name, brand and category..." aria-label="search" Style="width: 700px;"
                         onkeydown="if (event.keyCode == 13) document.getElementById('<%= btnBuscar.ClientID %>').click();"></asp:TextBox>
                     <asp:Button runat="server" Text="Buscar" ID="Buscar1" OnClick="btnBuscar_Click" class="btn btn-outline-light" UseSubmitBehavior="false"></asp:Button>
 

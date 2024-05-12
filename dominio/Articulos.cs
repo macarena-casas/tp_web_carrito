@@ -28,5 +28,28 @@ namespace dominio
         public string urlimagen { get; set; }
         public int ID() { return Id_a; }
         public List<Imagen> Imagenes { get; set; }
+        
+        public Articulos()
+        {
+            precio_a = 0;
+            nombre_a = "nada";
+            descripcion_a = "nada";
+            marca_a = new Marca();
+            categoria_a = new Categoria();
+            Imagenes = new List<Imagen>();
+            
+        }
+        public Articulos(string cod,string nom, string desc,Marca mar,Categoria cat,decimal pre)
+        {
+            marca_a = new Marca();
+            categoria_a = new Categoria();
+            codigo_a = cod;
+            nombre_a = nom;
+            descripcion_a = desc;
+            marca_a = mar;
+            categoria_a = cat;
+            precio_a = pre;
+            Imagenes = new List<Imagen>();
+        }
     }
 }

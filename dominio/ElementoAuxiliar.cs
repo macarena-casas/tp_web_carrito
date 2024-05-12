@@ -8,7 +8,7 @@ namespace dominio
 {
     public class ElementoAuxiliar
     {
-        public Articulos Articulo { get; set; }
+        public Articulos articulo { get; set; }
 
         public int cantidad { get; set; }
 

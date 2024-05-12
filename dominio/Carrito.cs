@@ -24,10 +24,10 @@ namespace dominio
             bool existe = false;
             for (int x = 0; x < listaarticulo.Count(); x++)
             {
-                if (listaarticulo[x].Articulo.Id_a == art.Id_a)
+                if (listaarticulo[x].articulo.Id_a == art.Id_a)
                 {
                     listaarticulo[x].cantidad++;
-                    listaarticulo[x].Subtotal = listaarticulo[x].Articulo.precio_a * listaarticulo[x].cantidad;
+                    listaarticulo[x].Subtotal = listaarticulo[x].articulo.precio_a * listaarticulo[x].cantidad;
                     existe = true;
 
                 }
@@ -35,13 +35,13 @@ namespace dominio
             if (existe == false)
             {
                 ElementoAuxiliar aux = new ElementoAuxiliar();
-                aux.Articulo = art;
+                aux.articulo = art;
                 aux.cantidad++;
                 aux.Subtotal = art.precio_a;
                 listaarticulo.Add(aux);
 
             }
-            TotalPrecio = listaarticulo.Sum(aux => aux.cantidad * aux.Articulo.precio_a);
+            TotalPrecio = listaarticulo.Sum(aux => aux.cantidad * aux.articulo.precio_a);
             TotalProductos = listaarticulo.Sum(aux => aux.cantidad);
         }
 
