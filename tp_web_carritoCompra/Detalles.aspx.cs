@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace tp_web_carritoCompra
 {
-    public partial class carrito : System.Web.UI.Page
+    public partial class Detalles : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

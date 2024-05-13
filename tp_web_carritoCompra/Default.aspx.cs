@@ -13,29 +13,61 @@ namespace tp_web_carritoCompra
 {
     public partial class Default : System.Web.UI.Page
     {
-        public List<Articulos> listaArticulo { get; set; }
+        public List<Articulos> listaarticulo { get; set; }
         public Carrito carritoactual { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
 
-
-
-
             if (Session["listaarticulo"] == null)
             {
                 ArticulosNegocio iManager = new ArticulosNegocio();
-                listaArticulo = iManager.listar();
-               // listaArticulo = urlValidation(listaArticulo);
-                Session["listaarticulo"] = listaArticulo;
+                listaarticulo = iManager.Listacompleta();
+               listaarticulo = validarurl(listaarticulo);
+                Session["listaarticulo"] = listaarticulo;
             }
             else
             {
 
-                listaArticulo= (List<Articulos>)Session["listaarticulo"];
+                listaarticulo= (List<Articulos>)Session["listaarticulo"];
+            }
+            
+            carritoactual = (Carrito)Session["carro"];
+        }
+        public List<Articulos> validarurl(List<Articulos> aux)
+        {
+            foreach (Articulos art in aux)
+            {
+                foreach (Imagen image in art.Imagenes)
+                {
+
+
+                    try
+                    {
+                        if (image.Nombre_imagen != "sinimagen")
+                        {
+                            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(image.Nombre_imagen);
+                            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+                            if (response.StatusCode != HttpStatusCode.OK)
+                            {
+
+                                image.Nombre_imagen = "fallacarga";
+                            }
+                        }
+                    }
+                    catch (WebException)
+                    {
+
+                        image.Nombre_imagen = "fallacarga";
+
+                    }
+
+                }
+
             }
 
-
+            return aux;
         }
+
     }
 }

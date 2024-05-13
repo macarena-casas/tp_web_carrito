@@ -49,9 +49,9 @@ namespace negocio
                     artic.precio_a = (decimal)anegocio.lector["Precio"];
                     artic.precio_a = Math.Round(artic.precio_a, 2);
                     artic.Imagenes = inegocio.ListarItems(artic.Id_a);
-                    if (artic.Imagenes.Count == 0)
+                    if (artic.Imagenes.Count() == 0)
                     {
-                        aux.Nombre_imagen = "EmptyImage";
+                        aux.Nombre_imagen = "sinimagen";
                         artic.Imagenes.Add(aux);
                     }
 
@@ -69,6 +69,11 @@ namespace negocio
                 throw ex;
             }
 
+
+        }
+        public List<Articulos> Listacompleta()
+        {
+            return uploadArticlesList("select A.Id As Id, A.Codigo As Codigo,A.Nombre As Nombre ,A.Descripcion As Descripcion ,M.Descripcion Marca,C.Descripcion As Categoria, C.Id As IdCategoria, M.Id As IdMarca ,A.Precio  As Precio FROM  ARTICULOS A left JOIN  MARCAS M on M.Id= A.IdMarca left JOIN CATEGORIAS C on C.Id= A.IdCategoria");
 
         }
 
