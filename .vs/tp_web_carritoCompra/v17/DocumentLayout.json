@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\OEM\\Desktop\\tp carrito 2.0\\tp_web_carrito\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{90587BDC-3B74-4349-A886-9AADA76CBB6B}|tp_web_carritoCompra\\tp_web_carritoCompra.csproj|c:\\users\\oem\\desktop\\tp carrito 2.0\\tp_web_carrito\\tp_web_carritocompra\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90587BDC-3B74-4349-A886-9AADA76CBB6B}|tp_web_carritoCompra\\tp_web_carritoCompra.csproj|solutionrelative:tp_web_carritocompra\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90587BDC-3B74-4349-A886-9AADA76CBB6B}|tp_web_carritoCompra\\tp_web_carritoCompra.csproj|c:\\users\\oem\\desktop\\tp carrito 2.0\\tp_web_carrito\\tp_web_carritocompra\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{90587BDC-3B74-4349-A886-9AADA76CBB6B}|tp_web_carritoCompra\\tp_web_carritoCompra.csproj|solutionrelative:tp_web_carritocompra\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Default.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\OEM\\Desktop\\tp carrito 2.0\\tp_web_carrito\\tp_web_carritoCompra\\Default.aspx.cs",
+              "RelativeDocumentMoniker": "tp_web_carritoCompra\\Default.aspx.cs",
+              "ToolTip": "C:\\Users\\OEM\\Desktop\\tp carrito 2.0\\tp_web_carrito\\tp_web_carritoCompra\\Default.aspx.cs",
+              "RelativeToolTip": "tp_web_carritoCompra\\Default.aspx.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T06:23:03.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Default.aspx",
+              "DocumentMoniker": "C:\\Users\\OEM\\Desktop\\tp carrito 2.0\\tp_web_carrito\\tp_web_carritoCompra\\Default.aspx",
+              "RelativeDocumentMoniker": "tp_web_carritoCompra\\Default.aspx",
+              "ToolTip": "C:\\Users\\OEM\\Desktop\\tp carrito 2.0\\tp_web_carrito\\tp_web_carritoCompra\\Default.aspx",
+              "RelativeToolTip": "tp_web_carritoCompra\\Default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-13T06:21:45.082Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
