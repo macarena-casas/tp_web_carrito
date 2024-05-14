@@ -34,6 +34,27 @@ namespace tp_web_carritoCompra
             
             carritoactual = (Carrito)Session["carro"];
         }
+
+        private void addItem()
+        {
+          
+            try
+            {
+                CarritoNegocio cManager = new CarritoNegocio();
+                listaarticulo= (List<Articulos>)Session["listaarticulo"];
+                Articulos articulo;
+                string codigo_a = Request.QueryString["Codigo"];
+                articulo = cManager.encontrarArticulo(codigo_a, listaarticulo);
+                Session["Cart"] = cManager.AguegarArticuloAlCarrito(articulo, carritoactual, 1);
+
+            }
+            catch (Exception ex)
+            {
+                Response.Redirect("~/Default.aspx");// deberia redireccionar a pagina de error
+                throw ex;
+            }
+
+        }
         public List<Articulos> validarurl(List<Articulos> aux)
         {
             foreach (Articulos art in aux)

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using dominio;
 
 
-namespace Negocio
+namespace negocio
 {
-    class CarritoNegocio
+     public class CarritoNegocio
     {
         public Articulos encontrarArticulo(string CodigoObjeto, List<Articulos> aux)
         {
