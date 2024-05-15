@@ -31,11 +31,11 @@
 
                                 <% if (articulo.Imagenes[i].Nombre_imagen == "fallacarga")
                                     { %>
-                                <img src="descarga.png" class="d-block w-100" style="object-fit: scale-down; height: 50vh; width: 100%;" alt="">
+                                <img src="https://previews.123rf.com/images/yoginta/yoginta2301/yoginta230100567/196853824-imagen-no-encontrada-ilustraci%C3%B3n-vectorial.jpg" class="d-block w-100" style="object-fit: scale-down; height: 50vh; width: 100%;" alt="">
                                 <% }
                                     else if (articulo.Imagenes[i].Nombre_imagen == "sinimagen")
                                     { %>
-                                <img src="emptyImage.jpg" class="d-block w-100" style="object-fit: scale-down; height: 50vh; width: 100%;" alt="">
+                                <img src="https://static.vecteezy.com/system/resources/previews/004/141/669/non_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg" class="d-block w-100" style="object-fit: scale-down; height: 50vh; width: 100%;" alt="">
                                 <% }
                                     else
                                     { %>
@@ -47,14 +47,14 @@
                                 {%>
 
 
-                            <div class="carousel-articulos ">
+                            <div class="carousel-item ">
                                 <% if (articulo.Imagenes[0].Nombre_imagen == "fallacarga")
                                     { %>
-                                <img src="descarga.png" class="d-block w-100" style="object-fit: scale-down; height: 50vh; width: 100%;" alt="">
+                                <img src="https://previews.123rf.com/images/yoginta/yoginta2301/yoginta230100567/196853824-imagen-no-encontrada-ilustraci%C3%B3n-vectorial.jpg" class="d-block w-100" style="object-fit: scale-down; height: 50vh; width: 100%;" alt="">
                                 <% }
                                     else if (articulo.Imagenes[0].Nombre_imagen == "sinimagen")
                                     { %>
-                                <img src="emptyImage.jpg" class="d-block w-100" style="object-fit: scale-down; height: 50vh; width: 100%;" alt="">
+                                <img src="https://static.vecteezy.com/system/resources/previews/004/141/669/non_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg" class="d-block w-100" style="object-fit: scale-down; height: 50vh; width: 100%;" alt="">
                                 <% }
                                       else
                                         { %>
@@ -66,13 +66,13 @@
 
                                 } %>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="Anterior">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
+                            <span class="visually-hidden">Anterior</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="Siguiente">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
+                            <span class="visually-hidden">Siguiente</span>
                         </button>
                     </div>
                 </div>
