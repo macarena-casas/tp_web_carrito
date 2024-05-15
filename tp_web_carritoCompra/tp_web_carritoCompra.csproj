@@ -70,6 +70,8 @@
     <Content Include="carrito.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Detalles.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="FinalizarCompra.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -94,6 +96,20 @@
     </Compile>
     <Compile Include="Detalles.aspx.designer.cs">
       <DependentUpon>Detalles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinalizarCompra.aspx.cs">
+      <DependentUpon>FinalizarCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinalizarCompra.aspx.designer.cs">
+      <DependentUpon>FinalizarCompra.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

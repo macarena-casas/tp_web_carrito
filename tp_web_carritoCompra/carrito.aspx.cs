@@ -32,7 +32,11 @@ namespace tp_web_carritoCompra
 
         protected void btnmas_Click(object sender, EventArgs e)
         {
-
+            Button btn = (Button)sender;
+            string codigo_a = btn.CommandArgument;
+            agregararticulosalcarro(codigo_a);
+            repetirarticulos.DataSource = carritoactual.listaarticulo;
+            repetirarticulos.DataBind();
         }
 
 
@@ -47,6 +51,44 @@ namespace tp_web_carritoCompra
             Session["carro"] = carritoactual;
 
 
+        }
+        private void agregararticulosalcarro(string codigoa)
+        {
+            try
+            {
+                for (int i = 0; i < carritoactual.listaarticulo.Count(); i++)
+                {
+                    if (carritoactual.listaarticulo[i].articulo.codigo_a == codigoa)
+                    {
+                        carritoactual.TotalPrecio = carritoactual.TotalPrecio + carritoactual.listaarticulo[i].articulo.precio_a;
+                        carritoactual.TotalProductos = carritoactual.TotalProductos + 1;
+                        carritoactual.listaarticulo[i].cantidad = carritoactual.listaarticulo[i].cantidad + 1;
+                        carritoactual.listaarticulo[i].Subtotal = carritoactual.listaarticulo[i].cantidad * carritoactual.listaarticulo[i].articulo.precio_a;
+                        Session["carro"] = carritoactual;
+                        repetirarticulos.DataSource = carritoactual.listaarticulo;
+                        repetirarticulos.DataBind();
+                        break;
+                    }
+                }
+
+                updateLabelCart();
+
+            }
+            catch (Exception ex)
+            {
+                Response.Redirect("~/Error.aspx");
+                throw ex;
+            }
+        }
+
+        private void updateLabelCart()
+        {
+            var masterPage = this.Master;
+            var lblHeader = masterPage.FindControl("Label1") as Label;
+            if (lblHeader != null)
+            {
+                lblHeader.Text = carritoactual.TotalProductos.ToString();
+            }
         }
 
     }

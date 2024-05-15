@@ -44,9 +44,9 @@
                         <h5 class="card-title" style="font-size: 30px; color: black;">$<%: articulo.precio_a  %></h5>
                         <p class="card-text" style="font-size: 30px; color: black;"><%:articulo.marca_a.Nombre%></p>
                         <p class="card-text" style="font-size: 30px; color: black;"><%:articulo.categoria_a.nombre_categoria%></p>
-                        <a href="Default.aspx?Code=<%:articulo.codigo_a %>" class="btn btn-outline-light" usesubmitbehavior="false" commandargument='<%=articulo.codigo_a%>'
+                        <a href="Default.aspx?Codigo=<%:articulo.codigo_a %>" class="btn btn-outline-light" usesubmitbehavior="false" commandargument='<%=articulo.codigo_a%>'
                             style="background-color: seagreen; color: white; font-weight: bold; border-color: dimgray">Agregar al Carro </a>
-                        <a href="<%: ResolveUrl("~/Detalles.aspx?id=" + articulo.Id_a) %>" class="btn btn-outline-secondary" style="font-weight: bold; border-color: dimgrey;" title="Detlles">+</a>
+                        <a href="<%: ResolveUrl("~/Detalles.aspx?id=" + articulo.Id_a) %>" class="btn btn-outline-secondary" style="font-weight: bold; border-color: dimgrey;" title="Detalles">+</a>
 
                     </div>
                 </center>
