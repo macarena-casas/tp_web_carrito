@@ -27,7 +27,11 @@ namespace tp_web_carritoCompra
 
         protected void btnMenos_Click(object sender, EventArgs e)
         {
-
+            Button btn = (Button)sender;
+            string codigo_a = btn.CommandArgument;
+            EliminararticuloCarrito (codigo_a, false);
+            repetirarticulos.DataSource = carritoactual.listaarticulo;
+            repetirarticulos.DataBind();
         }
 
         protected void btnmas_Click(object sender, EventArgs e)
@@ -42,6 +46,11 @@ namespace tp_web_carritoCompra
 
         protected void btnEliminarCarrito_Click(object sender, EventArgs e)
         {
+            LinkButton btn = (LinkButton)sender;
+            string codigoa = btn.CommandArgument;
+            EliminararticuloCarrito(codigoa, true) ;
+            repetirarticulos.DataSource = carritoactual.listaarticulo;
+            repetirarticulos.DataBind();
 
         }
 
@@ -49,7 +58,7 @@ namespace tp_web_carritoCompra
         {
 
             Session["carro"] = carritoactual;
-
+           
 
         }
         private void agregararticulosalcarro(string codigoa)
@@ -80,7 +89,45 @@ namespace tp_web_carritoCompra
                 throw ex;
             }
         }
-
+        private void EliminararticuloCarrito(string codigoa, bool todo)
+        {
+            for (int i = 0; i < carritoactual.listaarticulo.Count(); i++)
+            {
+                if (carritoactual.listaarticulo[i].articulo.codigo_a == codigoa)
+                {
+                    if (todo == true)
+                    {
+                        carritoactual.TotalPrecio = carritoactual.TotalPrecio - (carritoactual.listaarticulo[i].articulo.precio_a * carritoactual.listaarticulo[i].cantidad);
+                        carritoactual.TotalProductos = carritoactual.TotalProductos - carritoactual.listaarticulo[i].cantidad;
+                        carritoactual.listaarticulo.RemoveAt(i);
+                        Session["carro"] = carritoactual;
+                        repetirarticulos.DataSource = carritoactual.listaarticulo;
+                        repetirarticulos.DataBind();
+                        break;
+                    }
+                    else
+                    {
+                        carritoactual.TotalPrecio = carritoactual.TotalPrecio - carritoactual.listaarticulo[i].articulo.precio_a;
+                        carritoactual.TotalProductos = carritoactual.TotalProductos - 1;
+                        carritoactual.listaarticulo[i].cantidad = carritoactual.listaarticulo[i].cantidad - 1;
+                        carritoactual.listaarticulo[i].Subtotal = carritoactual.listaarticulo[i].articulo.precio_a * carritoactual.listaarticulo[i].cantidad;
+                        if (carritoactual.listaarticulo[i].cantidad == 0)
+                        {
+                            carritoactual.listaarticulo.RemoveAt(i);
+                        }
+                        Session["carro"] = carritoactual;
+                        repetirarticulos.DataSource = carritoactual.listaarticulo;
+                        repetirarticulos.DataBind();
+                        break;
+                    }
+                }
+            }
+            updateLabelCart();
+            if (carritoactual.TotalProductos == 0)
+            {
+                Response.Redirect("~/Error.aspx");
+            }
+        }
         private void updateLabelCart()
         {
             var masterPage = this.Master;
