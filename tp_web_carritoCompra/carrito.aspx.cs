@@ -16,7 +16,7 @@ namespace tp_web_carritoCompra
             carritoactual = (Carrito)Session["carro"];
             if (carritoactual.TotalProductos == 0)
             {
-                Response.Redirect("~/Default.aspx");
+                Response.Redirect("~/CarritoVacio.aspx");
             }
             else if (carritoactual != null && carritoactual.TotalProductos > 0)
             {
