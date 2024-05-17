@@ -125,7 +125,7 @@ namespace tp_web_carritoCompra
             updateLabelCart();
             if (carritoactual.TotalProductos == 0)
             {
-                Response.Redirect("~/Error.aspx");
+                Response.Redirect("~/CarritoVacio.aspx");
             }
         }
         private void updateLabelCart()

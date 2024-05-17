@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="carrito.aspx" />
+    <Content Include="CarritoVacio.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Detalles.aspx" />
     <Content Include="Error.aspx" />
@@ -82,6 +83,13 @@
     </Compile>
     <Compile Include="carrito.aspx.designer.cs">
       <DependentUpon>carrito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CarritoVacio.aspx.cs">
+      <DependentUpon>CarritoVacio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CarritoVacio.aspx.designer.cs">
+      <DependentUpon>CarritoVacio.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
