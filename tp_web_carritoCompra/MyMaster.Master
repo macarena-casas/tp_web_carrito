@@ -20,8 +20,12 @@
 
             <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="success">
                 <a href="Default.aspx" class="nav-link">
-                    <asp:Button runat="server" Text="Home" ID="Btnhome" class="btn btn-outline-light" UseSubmitBehavior="false"></asp:Button>
-                </a>
+                        <p style="text-align: left; font-size: 160%; color: white; margin-left:20px ; margin-right:5px ;"><i class="bi bi-house-fill "></i></p>
+                        <asp:Label Text="" ID="Label2" runat="server" CssClass="badge rounded-pill bg-secondary position-absolute start-100 translate-middle" Style="top: 15px; margin-left: -20px;" />
+                        <span class="visually-hidden">Página Principal</span>
+                    </a>
+                
+               
             </nav>
 
             <nav class="navbar bg-success" data-bs-theme="dark">
@@ -85,7 +89,7 @@
                         <a class="text-dark text-decoration-none" href="#">Politicas de Privacidad</a>
                     </div>
                     <div class="mb-2">
-                        <a class="text-dark text-decoration-none" href="#">Preguntas Frecuentes</a>
+                        <a class="text-dark text-decoration-none" href="PreguntasFrecuentes.aspx">Preguntas Frecuentes</a>
                     </div>
                     <div class="mb-2">
                         <a class="text-dark text-decoration-none" href="#">Centro de Seguridad</a>

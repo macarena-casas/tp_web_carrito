@@ -74,6 +74,7 @@
     <Content Include="Error.aspx" />
     <Content Include="FinalizarCompra.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="PreguntasFrecuentes.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -128,6 +129,13 @@
     </Compile>
     <Compile Include="MyMaster.Master.designer.cs">
       <DependentUpon>MyMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PreguntasFrecuentes.aspx.cs">
+      <DependentUpon>PreguntasFrecuentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreguntasFrecuentes.aspx.designer.cs">
+      <DependentUpon>PreguntasFrecuentes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
