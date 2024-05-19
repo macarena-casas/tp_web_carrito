@@ -11,7 +11,7 @@
     <div class="accordion accordion-flush" id="accordionpregfrecuentes" style="margin-left: 10%; margin-right: 10%; margin-bottom: 2%;">
         <div class="accordion-item">
             <h2 class="accordion-header" style="color: darkgreen;">
-                <button class="accordion-button collapsed" type="button" style="color: darkgreen; font-size: 25px" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <button class="accordion-button collapsed" type="button" style="color: darkgreen; font-size: 25px" data-bs-toggle="collapse" data-bs-target="#flush-uno" aria-expanded="false" aria-controls="flush-uno">
                     <strong>¿Como comprar? </strong>
                 </button>
             </h2>
@@ -23,7 +23,7 @@
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" style="color: darkgreen; font-size: 25px" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <button class="accordion-button collapsed" type="button" style="color: darkgreen; font-size: 25px" data-bs-toggle="collapse" data-bs-target="#flush-dos" aria-expanded="false" aria-controls="flush-dos">
                     <strong>Cupones y Descuentos </strong>
 
                 </button>
@@ -36,7 +36,7 @@
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" style="color: darkgreen;">
-                <button class="accordion-button collapsed" type="button" style="color: darkgreen; font-size: 25px" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <button class="accordion-button collapsed" type="button" style="color: darkgreen; font-size: 25px" data-bs-toggle="collapse" data-bs-target="#flush-tres" aria-expanded="false" aria-controls="flush-tres">
                     <strong>Informacion Sobre Productos </strong>
                 </button>
             </h2>
@@ -48,7 +48,7 @@
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" style="color: darkgreen; font-size: 25px" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <button class="accordion-button collapsed" type="button" style="color: darkgreen; font-size: 25px" data-bs-toggle="collapse" data-bs-target="#flush-cuatro" aria-expanded="false" aria-controls="flush-cuatro">
                     <strong>Cambiar Domicilio de Entrega</strong>
 
                 </button>
@@ -61,7 +61,7 @@
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" style="color: darkgreen; font-size: 25px" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <button class="accordion-button collapsed" type="button" style="color: darkgreen; font-size: 25px" data-bs-toggle="collapse" data-bs-target="#flush-cinco" aria-expanded="false" aria-controls="flush-cinco">
                     <strong>¿Como modificar un pedido? </strong>
 
                 </button>
@@ -75,7 +75,7 @@
         </div>
          <div class="accordion-item">
             <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" style="color: darkgreen; font-size: 25px" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <button class="accordion-button collapsed" type="button" style="color: darkgreen; font-size: 25px" data-bs-toggle="collapse" data-bs-target="#flush-seis" aria-expanded="false" aria-controls="flush-seis">
                     <strong>Documentación para retirar mi pedido </strong>
 
                 </button>
